@@ -1,0 +1,34 @@
+body {
+  background: linear-gradient(90deg, var(--cor-p1), var(--cor-p2));
+  display: grid;
+  justify-content: center;
+  color: var(--cor-p6);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 750px;
+}
+
+.box {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.btn {
+  border-radius: 15px;
+  border: none;
+  background: var(--cor-p8);
+  color: var(--cor-p7);
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--cor-p5);
+}

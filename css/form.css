@@ -1,0 +1,29 @@
+.form {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 5fr 3fr 1fr;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.form input {
+  grid-column: 2 / 3;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px 20px;
+  min-width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  font-size: 1rem;
+  color: var(--cor-p7);
+}
+
+.form input:focus {
+  border-color: var(--cor-p3);
+  box-shadow: 0 0 3px var(--cor-p3);
+  outline: none;
+}
+
+.form button {
+  padding: 20px;
+  margin-left: 10px;
+}

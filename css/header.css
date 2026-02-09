@@ -1,0 +1,18 @@
+.header {
+  margin-bottom: 40px;
+}
+
+.logotipo {
+  color: var(--cor-p4);
+  font-family: "Birthstone";
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 4px -1px 0 var(--cor-p5);
+  rotate: -2deg;
+  margin-bottom: 0px;
+}
+
+.header p {
+  text-align: center;
+  margin-top: 0px;
+}

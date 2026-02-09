@@ -1,0 +1,61 @@
+.task form {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.task form:hover {
+  transform: translate3d(3px, -3px, 0);
+}
+
+.task label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.task input[type="checkbox"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 4px;
+  border: 2px solid var(--cor-p3);
+  cursor: pointer;
+  position: relative;
+}
+
+.task input[type="checkbox"]:checked {
+  background: var(--cor-p3);
+}
+
+.task input[type="checkbox"]:checked::before {
+  content: "✓";
+  font-size: 1.25rem;
+  position: absolute;
+  top: -11px;
+  left: -1px;
+  color: white;
+}
+
+.task input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+}
+
+.task div + div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.task .date {
+  font-size: 0.625rem;
+}
+
+.task button {
+  padding: 10px 15px;
+  border-radius: 7px;
+  font-size: 0.75rem;
+}
