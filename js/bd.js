@@ -1,4 +1,4 @@
-import formatDate from "./formatDate.js";
+import formatDate from "./format-date.js";
 
 export const bd = {
   tasks: [],
