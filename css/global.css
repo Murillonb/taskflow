@@ -6,6 +6,18 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+ul,
+li,
+h1,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style: none;
+}
+
 .container {
   width: 750px;
 }

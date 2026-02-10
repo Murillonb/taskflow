@@ -1,5 +1,5 @@
 .form {
-  padding: 30px;
+  padding: 20px 30px;
   display: grid;
   grid-template-columns: 1fr 5fr 3fr 1fr;
   justify-content: center;

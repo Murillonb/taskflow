@@ -1,13 +1,12 @@
-.task form {
-  padding: 20px;
+.task {
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;
-  align-items: center;
+  padding: 10px 25px;
   transition: transform 0.3s;
 }
 
-.task form:hover {
+.task:hover {
   transform: translate3d(3px, -3px, 0);
 }
 
@@ -44,14 +43,9 @@
   text-decoration: line-through;
 }
 
-.task div + div {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
 .task .date {
   font-size: 0.625rem;
+  margin-right: 10px;
 }
 
 .task button {

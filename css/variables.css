@@ -7,6 +7,7 @@
   --cor-p6: #bbbbbb;
   --cor-p7: #ffeeec;
   --cor-p8: #e44c3b;
+  --cor-p9: #47a80f;
 }
 
 .cor-p1 {
@@ -39,4 +40,8 @@
 
 .cor-p8 {
   color: var(--cor-p8);
+}
+
+.cor-p9 {
+  color: var(--cor-p9);
 }

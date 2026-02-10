@@ -18,40 +18,56 @@
 <body>
   <header class="header container">
     <h1 class="logotipo">Task Flow</h1>
-    <p class="font-text">Controle cada task da sua vida!</p>
+    <p class="font-text">Take control of every task in your life!</p>
   </header>
 
   <main class="container">
 
     <section class="score ">
-      <div class="score-active box"><span class="cor-p5 font-information">0</span>Active</div>
-      <div class="score-done box"><span class="cor-p4 font-information">0</span>Done</div>
-      <div class="score-total box"><span class="cor-p3 font-information">0</span>Total</div>
+      <div class="score-active box"><span class="cor-p4 font-information">0</span>Active</div>
+      <div class="score-done box"><span class="cor-p3 font-information">0</span>Completed</div>
+      <div class="score-total box"><span class="cor-p9 font-information">0</span>All</div>
     </section>
 
-    <form class="form box">
+    <form class="form box" data-form>
       <input type="text" name="task" id="task" placeholder="write the new task...">
       <button class="btn">+ Adicionar</button>
     </form>
 
-    <section class="task container">
-      <form class="box">
-        <div>
+    <section class="task-filters">
+      <button class="active">All</button>
+      <button>Active</button>
+      <button>Completed</button>
+    </section>
+
+    <section class="tasks container">
+      <ul class="task-list">
+        <li class="task box">
           <label class="font-task">
             <input type="checkbox" name="status" id="status">
             <span>Teste</span>
           </label>
-        </div>
-        <div>
-          <span class="date">09 de fev.</span>
-          <button class="btn">Excluir</button>
-        </div>
-      </form>
+          <div>
+            <span class="date">09 de fev.</span>
+            <button class="btn">Excluir</button>
+          </div>
+        </li>
+        <li class="task box">
+          <label class="font-task">
+            <input type="checkbox" name="status" id="status">
+            <span>Teste</span>
+          </label>
+          <div>
+            <span class="date">09 de fev.</span>
+            <button class="btn">Excluir</button>
+          </div>
+        </li>
+      </ul>
     </section>
 
   </main>
 
-  <script src="./js/script.js"></script>
+  <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>
