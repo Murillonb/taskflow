@@ -1,5 +1,4 @@
-import register from "./register.js";
-import showTasks from "./show-tasks.js";
+import Task from './task.js';
 
-register();
-showTasks();
+const task = new Task();
+task.init();
