@@ -55,6 +55,10 @@
   font-size: 0.75rem;
 }
 
+.task a {
+  color: lightblue;
+}
+
 @media (max-width: 550px) {
   .task {
     padding: 10px 20px;

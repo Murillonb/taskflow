@@ -37,19 +37,50 @@ export default class Task {
   }
 
   createTask(task) {
+    const urlRegex =
+      /((?:https?:\/\/|www\.)[a-z0-9-]+(?:\.[a-z0-9-]+)+(?:\/[^\s]*)?)/gi;
+    const parts = task.task.split(urlRegex);
+
     const li = document.createElement('li');
     li.classList.add('task', 'box');
     li.innerHTML = `
-    <div class='div-task'>
-      <input type="checkbox" name="status" id="status" ${task.status === 'done' ? 'checked' : ''} data-check="${task.id}">
-      <label class="font-task">
-        <pre>${task.task}</pre>
-      </label>
-    </div>
-    <div>
-      <span class="date">${task.date}</span>
-      <button class="btn" data-btn-exc data-id="${task.id}">Excluir</button>
-    </div>`;
+      <div class="div-task">
+        <input 
+          type="checkbox" 
+          name="status" 
+          ${task.status === 'done' ? 'checked' : ''} 
+          data-check="${task.id}"
+        >
+
+        <label class="font-task">
+          <pre class="task-text"></pre>
+        </label>
+      </div>
+
+      <div>
+        <span class="date">${task.date}</span>
+        <button class="btn" data-btn-exc data-id="${task.id}">Excluir</button>
+      </div>
+    `;
+
+    const pre = li.querySelector('.task-text');
+
+    parts.forEach((part) => {
+      if (urlRegex.test(part)) {
+        const link = document.createElement('a');
+        link.href =
+          part.startsWith('http://') || part.startsWith('https://')
+            ? part
+            : `https://${part}`;
+        link.textContent = part;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+
+        pre.appendChild(link);
+      } else {
+        pre.appendChild(document.createTextNode(part));
+      }
+    });
 
     return li;
   }
