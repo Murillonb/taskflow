@@ -1,13 +1,13 @@
 .form {
   padding: 20px 30px;
-  display: grid;
-  grid-template-columns: 1fr 5fr 3fr 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-.form input {
-  grid-column: 2 / 3;
+.form textarea {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 20px 20px;
   min-width: 400px;
@@ -17,7 +17,7 @@
   color: var(--cor-p7);
 }
 
-.form input:focus {
+.form textarea:focus {
   border-color: var(--cor-p3);
   box-shadow: 0 0 3px var(--cor-p3);
   outline: none;
@@ -26,4 +26,15 @@
 .form button {
   padding: 20px;
   margin-left: 10px;
+}
+
+@media (max-width: 550px) {
+  .form {
+  padding: 10px 20px;
+  max-width: 85%;
+  margin: 0 auto 10px auto;
+  }
+.form textarea {
+  min-width: 75%;
+}
 }

@@ -1,9 +1,9 @@
 body {
   background: linear-gradient(90deg, var(--cor-p1), var(--cor-p2));
-  display: grid;
-  justify-content: center;
   color: var(--cor-p6);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 ul,
@@ -19,7 +19,7 @@ li {
 }
 
 .container {
-  width: 750px;
+  width: 100%;
 }
 
 .box {
@@ -43,4 +43,11 @@ li {
 
 .btn:hover {
   background: var(--cor-p5);
+}
+
+
+@media (max-width: 800px) {
+  body {
+    max-width: 500px;
+  }
 }

@@ -4,16 +4,17 @@
   margin-bottom: 12px;
   padding: 10px 25px;
   transition: transform 0.3s;
+  align-items: center;
 }
 
 .task:hover {
   transform: translate3d(3px, -3px, 0);
 }
 
-.task label {
+.task .div-task {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 20px;
 }
 
 .task input[type="checkbox"] {
@@ -52,4 +53,12 @@
   padding: 10px 15px;
   border-radius: 7px;
   font-size: 0.75rem;
+}
+
+@media (max-width: 550px) {
+.task {
+  padding: 10px 20px;
+  max-width: 85%;
+  margin: 0 auto 10px auto;
+}
 }

@@ -16,3 +16,13 @@
   text-align: center;
   margin-top: 0px;
 }
+
+@media (max-width: 550px) {
+  .logotipo {
+    font-size: 2.5rem;
+  }
+
+  .header p {
+    font-size: .875rem;
+  }
+}

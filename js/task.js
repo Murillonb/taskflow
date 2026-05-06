@@ -40,10 +40,12 @@ export default class Task {
     const li = document.createElement('li');
     li.classList.add('task', 'box');
     li.innerHTML = `
-    <label class="font-task">
+    <div class='div-task'>
       <input type="checkbox" name="status" id="status" ${task.status === 'done' ? 'checked' : ''} data-check="${task.id}">
-      <span>${task.task}</span>
-    </label>
+      <label class="font-task">
+        <pre>${task.task}</pre>
+      </label>
+    </div>
     <div>
       <span class="date">${task.date}</span>
       <button class="btn" data-btn-exc data-id="${task.id}">Excluir</button>
