@@ -34,7 +34,8 @@
   max-width: 85%;
   margin: 0 auto 10px auto;
   }
-.form textarea {
-  min-width: 75%;
-}
+  
+  .form textarea {
+    min-width: 75%;
+  }
 }
