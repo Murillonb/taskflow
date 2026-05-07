@@ -51,12 +51,8 @@ export default class Task {
           ${task.status === 'done' ? 'checked' : ''} 
           data-check="${task.id}"
         >
-
-        <label class="font-task">
           <pre class="task-text"></pre>
-        </label>
       </div>
-
       <div>
         <span class="date">${task.date}</span>
         <button class="btn" data-btn-exc data-id="${task.id}">Excluir</button>
