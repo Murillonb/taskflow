@@ -55,7 +55,7 @@ export default class Task {
       </div>
       <div>
         <span class="date">${task.date}</span>
-        <button class="btn" data-btn-exc data-id="${task.id}">Excluir</button>
+        <button class="btn" data-btn-exc data-id="${task.id}">Delete</button>
       </div>
     `;
 
